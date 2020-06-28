@@ -24,7 +24,6 @@ Route::post('/lendBook','BookController@lendBook');
 Route::post('/returnBook','BookController@lendBook');
 
 Route::resource('categories', 'CategoryController');
-
 Route::resource('categories', 'CategoryController')->only([
     'index'
 ]);
